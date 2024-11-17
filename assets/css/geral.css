@@ -1,0 +1,21 @@
+.principal {
+    background-color: #0f0f0f;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    border: solid 0.7px #bea6ff;
+    border-radius: 7px;
+    box-shadow: #bea6ff 0 0 5px 0;
+    transition: all 0.2s ease-in-out;
+}   .principal:hover {
+        box-shadow: #bea6ff 0 0 10px 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
