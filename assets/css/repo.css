@@ -20,8 +20,8 @@
     background-color: #0f0f0f;
     border: solid 4px #3a3a3a;
     border-radius: 7px;
-    height: 10em;
-    min-width: 390px;
+    min-height: 10em;
+    width: 390px;
     padding: 20px;
     display: flex;
     justify-content: center;
