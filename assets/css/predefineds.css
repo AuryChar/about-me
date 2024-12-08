@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
@@ -14,8 +15,8 @@ body {
 
 button {
     width: 110px;
-    min-height: 40px;
-    font-size: larger;
+    min-height: 50px;
+    font-size: large;
     font-weight: bold;
     background-color: #1c1c1c;
     color: #bea6ff;
