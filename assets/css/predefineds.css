@@ -8,12 +8,19 @@
     user-select: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: #1c1c1c;
     color: #bea6ff;
 }
 
 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 110px;
     min-height: 50px;
     font-size: large;
@@ -34,4 +41,5 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
