@@ -44,10 +44,49 @@ button {
     flex-direction: column;
 }
 
+span {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    background-color: #2b1c1c;
+    color: #ffa6a6;
+    bottom: 12px;
+    padding: 20px;
+    width: 350px;
+    border: #ffa6a6 2px solid;
+    border-radius: 7px;
+} span:hover {
+    color: #ff5b5b;
+    border-color: #ff5b5b;
+}
+
 .apears {
     display: flex;
     gap: 5px;
     transition: all 0.2s ease-in-out;
 } .desapear {
     display: none;
+    transition: all 0.2s ease-in-out;
+}
+
+@keyframes errorAnim {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+        border-color: red;
+        color: red;
+    }
+    50% {
+        transform: translateX(5px);
+        border-color: red;
+        color: red;
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
