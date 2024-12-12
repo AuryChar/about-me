@@ -19,3 +19,13 @@
     flex-direction: row;
     gap: 8px;
 }
+
+#others {
+    flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+    #others {
+        flex-direction: column;
+    }
+}
