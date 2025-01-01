@@ -1,9 +1,12 @@
-const desable = document.querySelector('#desable');
-const errSpan = document.querySelector('span');
+const desableRepo = document.querySelectorAll('#desable');
+const master = document.querySelector('.master');
 
-desable.addEventListener('click', () => {
-    errSpan.style.display = 'block';
-    setInterval(() => {
-        errSpan.style.display = 'none';
-    }, 3000);
+desableRepo.forEach(element => {
+    element.addEventListener('click', function() {
+        const spanCreate = document.createElement('span');
+        spanCreate.textContent = 'An error has occurred'
+        master.appendChild(spanCreate);
+        setTimeout(() => { spanCreate.remove(); }, 2400);
+    });
 });
+
