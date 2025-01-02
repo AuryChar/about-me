@@ -1,7 +1,6 @@
 .principal {
     background-color: #0f0f0f;
     padding: 40px;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -17,7 +16,7 @@
 .buttons {
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    margin: 8px;
 }
 
 #others {
