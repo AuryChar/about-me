@@ -35,6 +35,14 @@ button {
     background-color: #585858;
 }
 
+#others {
+    gap: 5px;
+}
+
+.principal {
+    display: none;
+}
+
 .master {
     width: 100vw;
     height: 100vh;
@@ -71,10 +79,24 @@ span {
 .apears {
     display: flex;
     gap: 5px;
-    transition: all 0.2s ease-in-out;
+    animation: apearAnim 0.5s reverse;
 } .desapear {
     display: none;
-    transition: all 0.2s ease-in-out;
+    transition: desapearAnim 0.1s reverse;
+}
+
+@keyframes apearAnim {
+    100% {
+        opacity: 0%;
+        transform: translateY(1vh);
+    }
+}
+
+@keyframes desapearAnim {
+    100% {
+        opacity: 100%;
+        transform: translateY(-5px);
+    }
 }
 
 @keyframes errorAnim {
@@ -83,13 +105,9 @@ span {
     }
     25% {
         transform: translateX(-5px);
-        border-color: red;
-        color: red;
     }
     50% {
         transform: translateX(5px);
-        border-color: red;
-        color: red;
     }
     75% {
         transform: translateX(-5px);

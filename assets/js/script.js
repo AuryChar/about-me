@@ -4,12 +4,12 @@ const pt = others.querySelector('#pt');
 const en = others.querySelector('#en');
 const sm = others.querySelector('#sm');
 const back = others.querySelector('#back');
-others.classList.add('desapear');
+const principal2 = document.querySelector('.principal');
+others.style.display = 'none'
 
 am.addEventListener('click', () => {
-    am.classList.add('desapear');
-    others.classList.remove('desapear');
-    others.classList.add('apears')
+    am.style.display = 'none'
+    others.style.display = 'flex'
 })
 
 pt.addEventListener('click', () => {
@@ -22,10 +22,8 @@ sm.addEventListener('click', () => {
     window.location.href = 'social.html';
 })
 back.addEventListener('click', () => {
-    am.classList.remove('desapear')
-    am.classList.add('apears');
-    others.classList.remove('apears');
-    others.classList.add('desapear')
+    am.style.display = 'flex'
+    others.style.display = 'none'
 })
 
 
