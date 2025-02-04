@@ -1,2 +1,0 @@
-let HelloWorld = console.log;
-
