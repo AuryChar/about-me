@@ -54,4 +54,8 @@
     } .loading-bar:hover {
         width: 110%;
     }
+
+    .principal {
+        width: 95%;
+    }
 }
