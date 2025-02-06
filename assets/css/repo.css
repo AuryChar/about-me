@@ -2,8 +2,8 @@
     background-color: var(--background-2);
     padding: 40px;
     width: 75%;
+    overflow-y: auto;
     justify-content: center;
-    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
@@ -20,7 +20,7 @@
     border: solid 4px var(--border);
     border-radius: 7px;
     min-height: 10em;
-    width: 390px;
+    width: 360px;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -43,4 +43,14 @@ p {
 
 .error {
     animation: errorAnim 0.4s ease-in-out 1;
+}
+
+@media screen and (max-width: 768px) {
+    .principal {
+        flex-wrap: none;
+    }
+
+    .repo {
+        width: 110%;
+    }
 }
