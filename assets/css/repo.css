@@ -1,5 +1,5 @@
 .principal {
-    background-color: #0f0f0f;
+    background-color: var(--background-2);
     padding: 40px;
     width: 75%;
     justify-content: center;
@@ -7,17 +7,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
-    border: solid 4px #3a3a3a;
+    border: solid 4px var(--border);
     border-radius: 7px;
     transition: all 0.2s ease-in-out;
 }   .principal:hover {
-        border-color: #ffa6e6;
-        box-shadow: #ffa6e6 0 0 10px 0;
+        border-color: var(--border-hover);
+        box-shadow: var(--color) 0 0 10px 0;
 }
 
 .repo {
-    background-color: #0f0f0f;
-    border: solid 4px #3a3a3a;
+    background-color: var(--background-2);
+    border: solid 4px var(--border);
     border-radius: 7px;
     min-height: 10em;
     width: 390px;
@@ -29,7 +29,7 @@
     gap: 20px;
     transition: all 0.2s ease-in-out;
 }   .repo:hover {
-        border-color: #ffa6e6;
+        border-color: var(--border-hover);
 }
 
 .buttons {

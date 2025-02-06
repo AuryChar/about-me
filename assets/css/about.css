@@ -1,18 +1,18 @@
 .principal {
     height: 95%;
-    background-color: #0f0f0f;
+    background-color: var(--background-2);
     overflow-y: auto;
     padding: 40px;
     width: 70%;
     align-items: center;
     flex-direction: column;
     gap: 30px;
-    border: solid 4px #3a3a3a;
+    border: solid 4px var(--border);
     border-radius: 7px;
     transition: all 0.2s ease-in-out;
 }   .principal:hover {
-        border-color: #ffa6e6;
-        box-shadow: #ffa6e6 0 0 10px 0;
+        border-color: var(--border-hover);
+        box-shadow: var(--color) 0 0 10px 0;
 }
 
 .experience-container {
@@ -25,26 +25,29 @@
 }
 
 .loading-bar {
-    border-radius: 7px;
+    border-radius: 20px;
     width: 80%;
     height: 20px;
-    background-color: #3a3a3a;
+    background-color: var(--background-1);
     transition: all 0.2s ease-in-out;
 } .loading-bar:hover {
     height: 50px;
     width: 90%;
+    border-radius: 7px;
+} .loading-bar:hover .loaded {
+    border-radius: 7px;
 }
 
 .loaded {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 7px;
+    border-radius: 20px;
     height: 100%;
-    color: #0f0f0f;
+    color: var(--background-2);
     width: 6%;
     transition: all 0.2s ease-in-out;
-    background-color: #ffa6e6;
+    background-color: var(--color);
 }
 
 @media screen and (max-width: 768px) {
