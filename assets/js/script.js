@@ -8,8 +8,9 @@ const principal2 = document.querySelector('.principal');
 others.style.display = 'none'
 
 am.addEventListener('click', () => {
-    am.style.display = 'none'
-    others.style.display = 'flex'
+    am.style.display = 'none';
+    others.style.display = 'flex';
+    principal2.classList.add('width-plus');
 })
 
 pt.addEventListener('click', () => {

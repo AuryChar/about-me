@@ -17,3 +17,13 @@ if (button) {
         localStorage.setItem("theme", isDark ? "dark" : "light");
     });
 }
+
+button.addEventListener('click', function () {
+    if(button.classList.contains('rotate')) {
+        button.classList.remove('rotate');
+        void this.offsetWidth
+        button.classList.add('rotate');
+    } else {
+        button.classList.add('rotate');
+    }
+})

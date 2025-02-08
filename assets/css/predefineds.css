@@ -139,6 +139,8 @@ span {
 } .desapear {
     display: none;
     transition: desapearAnim 0.2s reverse;
+} .rotate {
+    animation: rotateAnim 0.8s forwards;
 }
 
 @keyframes apearAnim {
@@ -180,5 +182,15 @@ span {
 @keyframes timeOut {
     100% {
         width: 0;
+    }
+}
+
+@keyframes rotateAnim {
+    50% {
+        scale: 0.9;
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
