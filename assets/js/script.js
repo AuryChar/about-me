@@ -1,24 +1,30 @@
 const am = document.querySelector('#am');
 const others = document.querySelector('#others');
-const buttons = {
-    pt: 'pt.html',
-    en: 'en.html',
-    sm: 'social.html',
-};
-
-others.hidden = true;
+const pt = others.querySelector('#pt');
+const en = others.querySelector('#en');
+const sm = others.querySelector('#sm');
+const back = others.querySelector('#back');
+const principal2 = document.querySelector('.principal');
+others.style.display = 'none'
 
 am.addEventListener('click', () => {
-    am.hidden = true;
-    others.hidden = false;
-});
+    am.style.display = 'none';
+    others.style.display = 'flex';
+})
 
-others.addEventListener('click', (event) => {
-    const id = event.target.id;
-    if (buttons[id]) {
-        window.location.href = buttons[id];
-    } else if (id === 'back') {
-        am.hidden = false;
-        others.hidden = true;
-    }
-});
+pt.addEventListener('click', () => {
+    window.location.href = 'pt.html';
+})
+en.addEventListener('click', () => {
+    window.location.href = 'en.html';
+})
+sm.addEventListener('click', () => {
+    window.location.href = 'social.html';
+})
+back.addEventListener('click', () => {
+    am.style.display = 'flex'
+    others.style.display = 'none'
+})
+
+
+
