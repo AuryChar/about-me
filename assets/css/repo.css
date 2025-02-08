@@ -47,10 +47,11 @@ p {
 
 @media screen and (max-width: 768px) {
     .principal {
+        width: 95%;
         flex-wrap: none;
     }
 
     .repo {
-        width: 110%;
+        width: 100%;
     }
 }
