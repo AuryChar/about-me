@@ -29,6 +29,7 @@
     gap: 20px;
     transition: all 0.2s ease-in-out;
 }   .repo:hover {
+        scale: 1.04;
         border-color: var(--border-hover);
 }
 
