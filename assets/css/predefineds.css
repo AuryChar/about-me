@@ -4,16 +4,16 @@
     --background-1: #1c1c1c;
     --background-2: #0f0f0f;
     --border: #585858;
-    --border-hover: #ffa6ec;
-    --color: #ffa6ec;
+    --border-hover: #e47c7c;
+    --color: #e47c7c;
 }
 
 .light-theme {
-    --background-1: #E3E3E3;
-    --background-2: #b8b8b8;
-    --border: #5a3f53;
-    --border-hover: #866680;
-    --color: #5a3f53;
+    --background-1: #b4b4b4;
+    --background-2: #969090;
+    --border: #5a3f3f;
+    --border-hover: #866666;
+    --color: #5a3f3f;
 }
 
 ::-webkit-scrollbar {
@@ -30,7 +30,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #52364a;
+    background: #424242;
     border-radius: 7px;
     transition: all 0.2s ease-in-out;
 }
