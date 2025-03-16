@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     _0x5678.removeChild(_0x5678.firstChild);
                 }
                 const _0xdef0 = document.createElement('div');
-                _0xdef0.innerHTML = '<h1>Ana Banana</h1> <br> <a href="https://www.youtube.com/watch?v=XFkzRNyygfk" target="_blank"><button>yeeaah</button></a>';
+                _0xdef0.innerHTML = '<h1>Ana Banana</h1> <br> <a href="https://www.youtube.com/watch?v=XFkzRNyygfk" target="_blank"><button>sei q vc gosta dessa musica</button></a>';
                 _0x5678.appendChild(_0xdef0);
             }
             _0x1a2b = 0;
