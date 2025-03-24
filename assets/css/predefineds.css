@@ -4,16 +4,16 @@
     --background-1: #1c1c1c;
     --background-2: #0f0f0f;
     --border: #707070;
-    --border-hover: #e47c7c;
-    --color: #e47c7c;
+    --border-hover: #cfcfcf;
+    --color: #cfcfcf;
 }
 
 .light-theme {
     --background-1: #b4b4b4;
-    --background-2: #969090;
-    --border: #5a3f3f;
-    --border-hover: #866666;
-    --color: #5a3f3f;
+    --background-2: #b4b4b4;
+    --border: #707070;
+    --border-hover: #292929;
+    --color: #292929;
 }
 
 ::-webkit-scrollbar {
@@ -91,15 +91,23 @@ button {
     background-color: var(--border-hover);
 }
 
-#toggle-theme {
+.actions-container {
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    gap: 10px;
+}
+
+.actions {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50px;
     height: 50px;
-    top: 0.5em;
-    left: 0.5em;
     font-size: large;
     font-weight: bold;
     background-color: var(--background-2);
@@ -107,7 +115,7 @@ button {
     border: var(--border) solid 3px;
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
-} #toggle-theme:hover {
+} .actions:hover {
     border: var(--border-hover) solid 3px;
 }
 
