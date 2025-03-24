@@ -3,7 +3,7 @@
 :root {
     --background-1: #1c1c1c;
     --background-2: #0f0f0f;
-    --border: #585858;
+    --border: #707070;
     --border-hover: #e47c7c;
     --color: #e47c7c;
 }
@@ -44,8 +44,27 @@
     transition: background-color 0.1s, color 0.1s;
 }
 
+hr {
+    border: solid 1px var(--color);
+    width: 100%;
+}
+
+.xp-time {
+    color: var(--border);
+    font-size: 1em;
+}
+
+.xp p {
+    border-top: solid 1px var(--border);
+    padding: 5px 20px 20px 20px;
+}
+
 a {
     text-decoration: none;
+}
+
+p {
+    text-align: justify;
 }
 
 body {
@@ -67,6 +86,7 @@ button {
     transition: all 0.2s ease-in-out;
 } button:hover{
         border: var(--border-hover) solid 3px;
+        cursor: pointer;
 } button:active{
     background-color: var(--border-hover);
 }

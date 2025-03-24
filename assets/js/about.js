@@ -1,20 +1,15 @@
-const loadingBars = document.querySelectorAll('.loading-bar');
-const html = document.querySelector('#html');
-const css = document.querySelector('#css');
-const js = document.querySelector('#js');
-const php = document.querySelector('#php');
+const cardsContainer = document.querySelector('.cards-container');
+const cards = document.querySelectorAll('.cards');
 
-const htmlPer = 100;
-const cssPer = 69;
-const jsPer = 20;
-const phpPer = 14;
+function addBlur() {
+    cardsContainer.classList.add('hovered');
+}
 
-html.firstChild.textContent = `HTML: ${htmlPer}%`;
-css.firstChild.textContent = `CSS: ${cssPer}%`;
-js.firstChild.textContent = `JS: ${jsPer}%`;
-php.firstChild.textContent = `PHP: ${phpPer}%`;
+function removeBlur() {
+    cardsContainer.classList.remove('hovered');
+}
 
-html.style = `width: ${htmlPer}%`
-css.style = `width: ${cssPer}%`
-js.style = `width: ${jsPer}%`
-php.style = `width: ${phpPer}%`
+cards.forEach(card => {
+    card.addEventListener('mouseenter', addBlur);
+    card.addEventListener('mouseleave', removeBlur);
+});

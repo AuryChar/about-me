@@ -15,39 +15,36 @@
         box-shadow: var(--color) 0 0 10px 0;
 }
 
-.experience-container {
+.cards-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    border: solid var(--border);
+    border-radius: 7px;
+    height: 20em;
+    width: 15em;
+    padding: 10px;
+    display: flex;
     flex-direction: column;
-    gap: 25px;
-    width: 90%;
-}
-
-.loading-bar {
-    border-radius: 20px;
-    width: 80%;
-    height: 20px;
-    background-color: var(--background-1);
-    transition: all 0.2s ease-in-out;
-} .loading-bar:hover {
-    height: 50px;
-    width: 90%;
-    border-radius: 7px;
-} .loading-bar:hover .loaded {
-    border-radius: 7px;
-}
-
-.loaded {
-    display: flex;
-    align-items: center;
+    gap: 1em;
     justify-content: center;
-    border-radius: 20px;
-    height: 100%;
-    color: var(--background-2);
-    width: 6%;
-    transition: all 0.2s ease-in-out;
-    background-color: var(--color);
+    align-items: center;
+    transition: all .2s ease-in-out;
+} .cards i {
+    font-size: 4em;
+} /* Adiciona blur nos cards quando o container está com hover */
+.cards-container:hover .cards:not(:hover) {
+    filter: blur(10px);
+}
+
+/* Remove o blur do card que está com hover */
+.cards-container .cards:hover {
+    filter: blur(0);
 }
 
 @media screen and (max-width: 768px) {
