@@ -28,3 +28,17 @@ desableRepo.forEach(element => {
     });
 });
 
+const repoContainer = document.querySelector('.repo-container');
+const repos = document.querySelectorAll('.repo');
+
+repos.forEach(repo => {
+    repo.addEventListener('mouseenter', () => {
+        repoContainer.classList.add('blur-active');
+        repo.classList.add('repo-hover');
+    });
+
+    repo.addEventListener('mouseleave', () => {
+        repoContainer.classList.remove('blur-active');
+        repo.classList.remove('repo-hover');
+    });
+});

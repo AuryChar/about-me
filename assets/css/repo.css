@@ -4,15 +4,20 @@
     width: 75%;
     overflow-y: auto;
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
     border: solid 4px var(--border);
     border-radius: 7px;
     transition: all 0.2s ease-in-out;
 }   .principal:hover {
         border-color: var(--border-hover);
         box-shadow: var(--color) 0 0 10px 0;
+}
+
+.repo-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .repo {
@@ -28,9 +33,17 @@
     flex-direction: column;
     gap: 20px;
     transition: all 0.2s ease-in-out;
-}   .repo:hover {
-        scale: 1.04;
-        border-color: var(--border-hover);
+}
+
+.repo-container.blur-active .repo:not(.repo-hover) {
+    filter: blur(2px);
+    opacity: 0.5;
+}
+
+.repo-hover {
+    filter: blur(0);
+    scale: 1.05;
+    border-color: var(--border-hover);
 }
 
 .buttons {

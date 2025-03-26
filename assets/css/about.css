@@ -34,17 +34,20 @@
     gap: 1em;
     justify-content: center;
     align-items: center;
-    transition: all .2s ease-in-out;
-} .cards i {
-    font-size: 4em;
-} /* Adiciona blur nos cards quando o container está com hover */
-.cards-container:hover .cards:not(:hover) {
-    filter: blur(10px);
+    transition: all 0.2s ease-in-out;
 }
 
-/* Remove o blur do card que está com hover */
-.cards-container .cards:hover {
+.cards i {
+    font-size: 4em;
+}
+
+.cards-container.hovered .cards {
+    filter: blur(2px);
+}
+
+.cards-container.hovered .cards:hover {
     filter: blur(0);
+    scale: 1.05;
 }
 
 @media screen and (max-width: 768px) {
