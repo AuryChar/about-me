@@ -61,4 +61,9 @@
     .principal {
         width: 95%;
     }
+    .cards-container {
+        width: 100%;
+    } .cards {
+        width: 100%;
+    }
 }
