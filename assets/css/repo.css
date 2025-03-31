@@ -42,7 +42,7 @@
 
 .repo-hover {
     filter: blur(0);
-    scale: 1.05;
+    transform: translateY(-.5em);
     border-color: var(--border-hover);
 }
 

@@ -47,7 +47,7 @@
 
 .cards-container.hovered .cards:hover {
     filter: blur(0);
-    scale: 1.05;
+    transform: translateY(-.5em);
 }
 
 @media screen and (max-width: 768px) {
