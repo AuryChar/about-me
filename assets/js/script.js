@@ -14,7 +14,7 @@ back.addEventListener('click', () => {
 })
 
 function getLanguage() {
-    const language = navigator.userLanguage;
+    const language = navigator.language;
 
     if (language.startsWith("pt")){
         window.location.href = "pt.html";
