@@ -13,5 +13,14 @@ back.addEventListener('click', () => {
     others.style.display = 'none'
 })
 
+function getLanguage() {
+    const language = navigator.language;
 
-
+    if (language.startsWith("pt")){
+        window.location.href = "pt.html";
+    } else if (language.startsWith("es")){
+        window.location.href = "es.html";
+    } else {
+        window.location.href = "en.html";
+    }
+}

@@ -15,7 +15,7 @@
         box-shadow: var(--color) 0 0 10px 0;
 }
 
-.cards-container {
+.card-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@
     flex-wrap: wrap;
 }
 
-.cards {
+.card {
     border: solid var(--border);
     border-radius: 7px;
     height: 20em;
@@ -37,17 +37,19 @@
     transition: all 0.2s ease-in-out;
 }
 
-.cards i {
-    font-size: 4em;
-}
-
-.cards-container.hovered .cards {
+.card-container.blur-active .card:not(.card-hover) {
     filter: blur(2px);
+    opacity: 0.5;
 }
 
-.cards-container.hovered .cards:hover {
+.card-hover {
     filter: blur(0);
     transform: translateY(-.5em);
+    border-color: var(--border-hover);
+}
+
+.card i {
+    font-size: 4em;
 }
 
 @media screen and (max-width: 768px) {
