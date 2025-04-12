@@ -10,9 +10,10 @@
     border: solid 4px var(--border);
     border-radius: 7px;
     transition: all 0.2s ease-in-out;
-}   .principal:hover {
-        border-color: var(--border-hover);
-        box-shadow: var(--color) 0 0 10px 0;
+}
+.principal:hover {
+    border-color: var(--border-hover);
+    box-shadow: var(--color) 0 0 10px 0;
 }
 
 .card-container {
@@ -44,7 +45,7 @@
 
 .card-hover {
     filter: blur(0);
-    transform: translateY(-.5em);
+    transform: translateY(-0.5em);
     border-color: var(--border-hover);
 }
 
@@ -56,7 +57,8 @@
     .loading-bar {
         height: 50px;
         width: 110%;
-    } .loading-bar:hover {
+    }
+    .loading-bar:hover {
         width: 110%;
     }
 
@@ -65,7 +67,8 @@
     }
     .cards-container {
         width: 100%;
-    } .cards {
+    }
+    .cards {
         width: 100%;
     }
 }

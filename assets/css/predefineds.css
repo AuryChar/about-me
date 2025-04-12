@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap");
 
 :root {
     --background-1: #1c1c1c;
@@ -36,12 +36,14 @@
 }
 
 * {
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata", monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     user-select: none;
-    transition: background-color 0.1s, color 0.1s;
+    transition:
+        background-color 0.1s,
+        color 0.1s;
 }
 
 hr {
@@ -84,10 +86,12 @@ button {
     color: var(--color);
     border: var(--border) solid 3px;
     transition: all 0.2s ease-in-out;
-} button:hover{
-        border: var(--border-hover) solid 3px;
-        cursor: pointer;
-} button:active{
+}
+button:hover {
+    border: var(--border-hover) solid 3px;
+    cursor: pointer;
+}
+button:active {
     background-color: var(--border-hover);
 }
 
@@ -100,6 +104,10 @@ button {
     left: 0;
     padding: 10px;
     gap: 10px;
+}
+
+svg path {
+    fill: var(--color);
 }
 
 .actions {
@@ -115,7 +123,8 @@ button {
     border: var(--border) solid 3px;
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
-} .actions:hover {
+}
+.actions:hover {
     border: var(--border-hover) solid 3px;
 }
 
@@ -146,17 +155,19 @@ span {
     width: 350px;
     border-radius: 7px;
     animation: errorAnim 0.4s ease-in-out;
-} span:hover {
+}
+span:hover {
     color: #ff5b5b;
     border-color: #ff5b5b;
-} span::before {
+}
+span::before {
     position: absolute;
     bottom: 0;
     left: 0;
     background-color: #ff5b5b;
     width: 100%;
     height: 3px;
-    content: '';
+    content: "";
     animation: timeOut 2.4s linear 1 forwards;
 }
 
@@ -164,10 +175,12 @@ span {
     display: flex;
     gap: 5px;
     animation: apearAnim 0.3s reverse;
-} .desapear {
+}
+.desapear {
     display: none;
     transition: desapearAnim 0.2s reverse;
-} .rotate {
+}
+.rotate {
     animation: rotateAnim 0.8s forwards;
 }
 
